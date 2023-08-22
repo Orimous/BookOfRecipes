@@ -32,7 +32,8 @@ fun IndianPage() {
         IndianDishes.KulfiFalooda
     )
     LazyColumn(
-        verticalArrangement = Arrangement.spacedBy(20.dp)
+        verticalArrangement = Arrangement.spacedBy(20.dp),
+        modifier = Modifier.fillMaxSize()
     ) {
         items(IndiansDishes) { indianDish ->
             IndianDishCard(indianDish)

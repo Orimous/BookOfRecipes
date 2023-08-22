@@ -31,7 +31,8 @@ fun MoroccanPage() {
         MoroccanDishes.MintTea
     )
     LazyColumn(
-        verticalArrangement = Arrangement.spacedBy(20.dp)
+        verticalArrangement = Arrangement.spacedBy(20.dp),
+        modifier = Modifier.fillMaxSize()
     ) {
         items(MoroccanDishes) { moroccanDish ->
             MoroccanDishCard(moroccanDish)

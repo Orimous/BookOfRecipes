@@ -31,7 +31,8 @@ fun FrenchPage() {
         FrenchDishes.Ratatouille
     )
     LazyColumn(
-        verticalArrangement = Arrangement.spacedBy(20.dp)
+        verticalArrangement = Arrangement.spacedBy(20.dp),
+        modifier = Modifier.fillMaxSize()
     ) {
         items(FrenchDishes) { frenchDish ->
             FrenchDishCard(frenchDish)
